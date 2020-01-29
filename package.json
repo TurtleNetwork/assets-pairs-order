@@ -32,5 +32,8 @@
   },
   "dependencies": {
     "bs58": "^4.0.1"
+  },
+  "jest": {
+    "testURL": "http://localhost/"
   }
 }
