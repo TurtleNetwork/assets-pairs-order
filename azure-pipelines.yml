@@ -23,17 +23,12 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'test'
-
-- task: Npm@1
-  inputs:
-    command: 'custom'
     customCommand: 'config set access public --global'
 
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'run build'
+    customCommand: 'run prepublish'
     
 - task: Npm@1
   inputs:
