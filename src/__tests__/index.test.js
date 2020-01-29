@@ -70,8 +70,8 @@ describe('orderPair utility', () => {
         'FxSm86qcEw8wGfpX3T7X5fsnuK5XxYA6ZfVYJja29vMA'
       )
     ).toEqual([
-      'FxSm86qcEw8wGfpX3T7X5fsnuK5XxYA6ZfVYJja29vMA',
       'Gtb1WRznfchDnTh37ezoDTJ4wcoKaRsKqKjJjy7nm2zU',
+      'FxSm86qcEw8wGfpX3T7X5fsnuK5XxYA6ZfVYJja29vMA'
     ]);
   });
   it("orders [FxSm86qcEw8wGfpX3T7X5fsnuK5XxYA6ZfVYJja29vMA', EUR] in [FxSm86qcEw8wGfpX3T7X5fsnuK5XxYA6ZfVYJja29vMA, EUR]", () => {
@@ -81,8 +81,8 @@ describe('orderPair utility', () => {
         'Gtb1WRznfchDnTh37ezoDTJ4wcoKaRsKqKjJjy7nm2zU'
       )
     ).toEqual([
-      'FxSm86qcEw8wGfpX3T7X5fsnuK5XxYA6ZfVYJja29vMA',
       'Gtb1WRznfchDnTh37ezoDTJ4wcoKaRsKqKjJjy7nm2zU',
+      'FxSm86qcEw8wGfpX3T7X5fsnuK5XxYA6ZfVYJja29vMA',
     ]);
   });
   it("orders ['FxSm86qcEw8wGfpX3T7X5fsnuK5XxYA6ZfVYJja29vMA', 'DNhP2zAH5HM1kdUSmxcBqs8RP4vvUgRFc1YgAKkfPmPD'] in ['FxSm86qcEw8wGfpX3T7X5fsnuK5XxYA6ZfVYJja29vMA', 'DNhP2zAH5HM1kdUSmxcBqs8RP4vvUgRFc1YgAKkfPmPD', ]", () => {
@@ -107,15 +107,15 @@ describe('orderPair utility', () => {
       'DNhP2zAH5HM1kdUSmxcBqs8RP4vvUgRFc1YgAKkfPmPD',
     ]);
   });
-  it('orders [USD, WAVES] in [WAVES, USD]', () => {
+  it('orders [BTC, TN] in [TN, BTC]', () => {
     expect(
-      orderPair('Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck', 'WAVES')
-    ).toEqual(['WAVES', 'Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck']);
+      orderPair('5Asy9P3xjcvBAgbeyiitZhBRJZJ2TPGSZJz9ihDTnB3d', 'TN')
+    ).toEqual(['TN', '5Asy9P3xjcvBAgbeyiitZhBRJZJ2TPGSZJz9ihDTnB3d']);
   });
-  it('orders [WAVES, USD] in [WAVES, USD]', () => {
+  it('orders [TN, BTC] in [TN, BTC]', () => {
     expect(
-      orderPair('WAVES', 'Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck')
-    ).toEqual(['WAVES', 'Ft8X1v1LTa1ABafufpaCWyVj8KkaxUWE6xBhW6sNFJck']);
+      orderPair('TN', '5Asy9P3xjcvBAgbeyiitZhBRJZJ2TPGSZJz9ihDTnB3d')
+    ).toEqual(['TN', '5Asy9P3xjcvBAgbeyiitZhBRJZJ2TPGSZJz9ihDTnB3d']);
   });
   it('works with custom predefinedList', () => {
     const customOrderPair = createOrderPair(['1', '2']);
