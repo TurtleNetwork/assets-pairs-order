@@ -1,12 +1,12 @@
 {
-  "name": "@waves/assets-pairs-order",
+  "name": "@turtlenetwork/assets-pairs-order",
   "version": "4.0.0",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wavesplatform/assets-pairs-order"
+    "url": "https://github.com/TurtleNetwork/assets-pairs-order"
   },
   "scripts": {
     "build:browser": "rollup -c rollup.config.js",
