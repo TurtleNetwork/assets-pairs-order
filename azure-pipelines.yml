@@ -29,7 +29,14 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'run prepublish'
-    
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'junit.xml'
+  condition: always()
+  displayName: 'Upload junit test results'
+
 - script: |
     PackageName=$(npm list --json --depth=0 | sed -n 2p | cut -d '"' -f4)
     NewPackageVersion=$(npm list --json --depth=0 | sed -n 3p | cut -d '"' -f4)
