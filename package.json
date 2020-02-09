@@ -1,6 +1,6 @@
 {
   "name": "@turtlenetwork/assets-pairs-order",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "license": "MIT",
@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build:browser": "rollup -c rollup.config.js",
-    "test": "jest",
+    "test": "jest --reporters=jest-junit",
     "prepublish": "yarn test && yarn build:browser"
   },
   "devDependencies": {
@@ -19,6 +19,7 @@
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
     "jest": "^22.4.3",
+    "jest-junit": "^10.0.0",
     "regenerator-runtime": "^0.11.1",
     "rollup": "^0.58.0",
     "rollup-plugin-babel": "^3.0.3",
