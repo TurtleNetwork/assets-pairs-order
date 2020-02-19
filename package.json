@@ -1,6 +1,6 @@
 {
   "name": "@turtlenetwork/assets-pairs-order",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "license": "MIT",
