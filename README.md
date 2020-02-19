@@ -1,6 +1,6 @@
 # Utility for ordering pair of assets in (amount_asset, price_asset)
 
-![Build Status](https://api.travis-ci.org/wavesplatform/assets-pairs-order.svg?branch=master)
+[![Build Status](https://dev.azure.com/BlackTurtleBVBA/TurtleNetwork_OpenSource/_apis/build/status/TurtleNetwork.assets-pairs-order?branchName=master)](https://dev.azure.com/BlackTurtleBVBA/TurtleNetwork_OpenSource/_build/latest?definitionId=14&branchName=master)
 
 ## Example:
 
